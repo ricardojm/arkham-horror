@@ -6,6 +6,8 @@ import collections
 import clr
 clr.AddReference('System.Web.Extensions')
 from System.Web.Script.Serialization import JavaScriptSerializer as json #since .net 3.5?
+clr.AddReference('Newtonsoft.Json')
+from Newtonsoft.Json.Linq import JArray, JObject
 
 PLAYER_DECK = ['Investigator', 'Special', 'Asset', 'Event', 'Skill', 'Weakness', 'Sideboard', 'Basic Weaknesses']
 
